@@ -1,1 +1,1 @@
-var api_url = "https://8dab-2803-d100-8800-f1a-829-6938-e58a-4e7a.ngrok.io/api/sensor/obtener" ;
+var api_url = "https://cb91-2803-d100-8800-f1a-f9cc-b00e-4c84-1f3e.ngrok.io" ;
