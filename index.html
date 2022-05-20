@@ -1,7 +1,13 @@
+
 <html>
     <head>
-        <title>Medidor de areas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -14,157 +20,129 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <style>
-            #header{
-                text-align: center;
+            *{
+                box-sizing: border-box;
             }
-            #areaBase, #areaAltura, #areaResultado{
-                display: none;
-            }
-        </style>
-        <style>
-            @media (max-width: 600px) {
-              #header {
-                transform: scale(0.5);
-              }
-            }
-        </style>
 
-        <meta charset="utf-8">  
+            @media (min-width: 1100px) {
+                #title{
+                    font-family: 'Bowlby One', cursive;
+                }
+                nav{
+                    background-color: white;
+                    
+                }
+                nav *{
+                    display: inline-block;
+                    line-height: 70px;
+                }
+
+                nav ul{
+                    float: right;
+                }
+                nav ul li{
+                    margin-right: 140px;
+                }
+
+                h1{
+                    text-align: center !important;
+                    margin-top: 40px;
+                    font-family: 'Bowlby One', cursive;
+                    font-size: 90px;
+                }
+                #main{
+                    background-color: rgb(67, 53, 192);
+                    text-align: center;
+                    padding-top: 200px;
+                    padding-bottom: 200px;
+                    font-size: 24px;
+                    color: white;
+                }
+                #down{
+                    background-color: rgb(41, 41, 41);
+                    height: 80px;
+                    
+                }
+                #box{
+                    background-color: rgb(67, 53, 192);
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                    position: relative;
+                    margin-bottom: -80px;
+                    top: -50px;
+                    transform: rotate(45deg);
+                }
+            }
+
+            @media (max-width: 1099px)
+            {
+                nav div, nav ul{
+                    display: none ;
+                }
+
+                h1{
+                    text-align: center !important;
+                    margin-top: 40px;
+                    font-family: 'Bowlby One', cursive;
+                    font-size: 50px;
+                }
+                #main{
+                    background-color: rgb(67, 53, 192);
+                    text-align: center;
+                    padding-top: 200px;
+                    padding-bottom: 200px;
+                    font-size: 24px;
+                    color: white;
+                }
+                #down{
+                    background-color: rgb(41, 41, 41);
+                    height: 80px;
+                    
+                }
+                #box{
+                    background-color: rgb(67, 53, 192);
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                    position: relative;
+                    margin-bottom: -80px;
+                    top: -50px;
+                    transform: rotate(45deg);
+                }
+            }
+
+
+
+
+        </style>
     </head>
     <body>
+      
         <div class="container">
-            <div id="header">
-                <h1>Medidor de distancias</h1>
-                <p>Resultado</p>
-                <!-- LCD Display Container -->
-                <div id="lcd-container" class="lcd-container"></div>
-                <hr>
-                <button class="btn btn-primary" id="btnLeer">Tomar Lectura</button>
-            </div>
+            <nav>
+                <div id="title">CARLOS AMBELIZ</div>
+                <ul>
+                    <li>WORK</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
         </div>
-        <br><br>
-        <div class="container">
-            <div class="row" id="areaBase">
-                <div class="col-2">
-                    <label for="">Base</label>
-                </div>
-                <div class="col-10">
-                    <input type="text" class="form-control"><br>
-                </div>
-            </div>
-            <div class="row" id="areaAltura">
-                <div class="col-2">
-                    <label for="">Altura</label>
-                </div>
-                <div class="col-10">
-                    <input type="text" class="form-control"><br>
-                </div>
-            </div>
-            <div class="row" id="areaResultado">
-                <div class="col-2">
-                    <label for="">Resultado</label>
-                </div>
-                <div class="col-10">
-                    <input type="text" class="form-control"><br>
-                </div>
-                <hr>
-                <div style="text-align: center;">
-                    <button class="btn btn-light" id="btnRepetir">Repetir</button>
-                </div>
-            </div>
-        </div> 
-
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-        <!-- Plugin Script -->
-        <script src="index.js"></script>
-
-        <!-- Api uri Script -->
-        <script src="api-route.js"></script>
-
-
-        <!-- implement plugin -->
-        <script>
-            var index  = 0;
-            var lectura = 0;
-
-            document.addEventListener('DOMContentLoaded', function(){
-                var lcd = new LCD({
-                    elem: document.getElementById("lcd-container"),
-                    rows: 2,
-                    columns: 18,
-                    pixelSize: 2,
-                    pixelColor: "#000"
-                });
-
     
+        <div id="main">
+            <h1>CARLOS AMBELIZ</h1>
+            <p>...</p>
+            <p>Developer</p>
 
-                lcd.writeString({
-                    string: "INICIANDO...",
-                    offset: 0
-                });
-                var invl = setInterval( function() {
-                    Leer(index);
-                    // Obtener datos del api
-                    $.ajax({
-                    type:"GET",
-                    url: api_url,
-                    dataType: "json",
-                    success: function (data) {
-                        lectura = data.distancia;
-                        // clear screen
-                        lcd.clearScreen();
-                        // write new string
-                        lcd.writeString({
-                            string: data.distancia.toString() + " CENTIMETROS",
-                            offset: 0
-                        });
-                    }
-                    });
+        </div>
+        <div id="box"></div>
+        <div id="down"></div>
 
-                }, 3200 ); 
-            });
+        <div id="work">
 
-            $("#btnLeer").click(function(){
-                if(index == 0){
-                    $("#areaBase input").val(lectura.toString());
-                    index++;
-                }else if(index == 1){
-                    $("#areaAltura input").val(lectura.toString());
-                    index++;
-                }
-            });
+        </div>
 
-            $("#btnRepetir").click(function(){
-                index=0;
-                $("#areaBase input").val("");
-                $("#areaAltura input").val("");
-                $("#areaResultado input").val(lectura.toString());
-                $("#areaResultado").hide(100);
-                $("#btnLeer").show(300);
-            });
-
-            function CalcularResultado(){
-                var base =  parseFloat($("#areaBase input").val());
-                var altura = parseFloat($("#areaAltura input").val());
-                $("#areaResultado input").val(Math.round(base * altura , 2).toString() + " cm³");
-            }
-
-            function Leer(index){
-                if(index == 0){
-                    $("#areaBase").show(300);
-                }else if(index == 1){
-                    $("#areaBase").hide(300);
-                    $("#areaAltura").show(300);
-                }else if(index == 2){
-                    $("#btnLeer").hide(300);
-                    $("#areaAltura").hide(300);
-                    $("#areaResultado").show(300);
-                    CalcularResultado();
-                }
-            }
-        </script>        
+        <footer>Carlos Ambeliz 2021 Todos los derechos reservados</footer>
     </body>
 </html>
-
