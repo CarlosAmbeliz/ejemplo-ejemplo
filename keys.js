@@ -1,4 +1,4 @@
-var licencias = [
+[
 
 
 {"id":1, "key":"123456789"}
