@@ -3,6 +3,20 @@ header {
     background-color: #333; /* Color de fondo del encabezado */
     color: #fff; /* Color del texto */
     padding: 20px; /* Espaciado interior del encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    color: #fff; /* Color del texto del logo */
 }
 
 /* Estilos para la barra de navegación */
@@ -10,10 +24,10 @@ nav ul {
     list-style-type: none; /* Elimina los puntos de lista */
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px; /* Espaciado entre elementos del menú */
 }
 
