@@ -14,12 +14,13 @@ mostrarHora();
 
 
 
-
+const elemento = document.querySelector('.rebote');
+elemento.style.animation = 'reboteAnimacion 1s ease-in-out 1';
 // Repetir la animación cada 5 segundos
-setTimeout(function () {
-    const elemento = document.querySelector('.rebote');
-    elemento.style.animation = 'reboteAnimacion 5s ease-in-out infinite';
+setInterval(function () {
+    elemento.style.animation = 'none'; // Detener la animación
+    elemento.style.animation = 'reboteAnimacion 1s ease-in-out 1';
     setTimeout(function () {
         elemento.style.animation = 'none'; // Detener la animación
-    }, 5000);
-}, 2000);
+    }, 1500);
+}, 3500);

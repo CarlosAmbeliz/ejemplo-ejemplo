@@ -91,22 +91,27 @@ nav ul li a:hover {
 
 
 
-
 /* Definir la animación de rebote */
 @keyframes reboteAnimacion {
-    0%, 100% {
+    0% {
         transform: translateY(0);
     }
-    5% {
-        transform: translateY(-20px); /* Altura máxima del rebote */
+    10% {
+        transform: translateY(-10px); /* Altura máxima del rebote */
     }
-    12% {
-        transform: translateY(0px); /* Altura máxima del rebote */
+    30% {
+        transform: translateY(0); /* Altura máxima del rebote */
     }
-    14% {
+    50% {
+        transform: translateY(-5px); /* Altura máxima del rebote */
+    }
+    70% {
+        transform: translateY(0); /* Altura máxima del rebote */
+    }
+    90% {
         transform: translateY(-2px); /* Altura máxima del rebote */
     }
-    16% {
-        transform: translateY(0px); /* Altura máxima del rebote */
+    100% {
+        transform: translateY(0); /* Altura máxima del rebote */
     }
 }
