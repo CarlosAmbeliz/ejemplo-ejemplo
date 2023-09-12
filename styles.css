@@ -1,0 +1,29 @@
+/* Estilos básicos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interior del encabezado */
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    font-weight: bold;
+}
+
+/* Cambiar color del enlace al pasar el cursor */
+nav ul li a:hover {
+    color: #ff6600; /* Color de texto al pasar el cursor */
+}
