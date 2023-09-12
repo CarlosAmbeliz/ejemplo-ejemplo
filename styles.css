@@ -8,6 +8,16 @@ header {
     align-items: center;
 }
 
+
+body{
+    background-image: url("./assets/atitlan.jpg");
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* La imagen se centrará en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Establece la altura al 100% de la ventana gráfica del navegador */
+}
+
+
 /* Estilos para el logo */
 .logo {
     font-size: 24px;
@@ -45,3 +55,58 @@ nav ul li a:hover {
 
 
 
+#hora{
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+    color: white;
+    font-size: 98px;
+    font-family: 'Archivo Black', sans-serif;
+    opacity: 0.6;
+}
+
+/* Estilos para centrar el botón */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh; /* Opcional: centra verticalmente en la pantalla */
+}
+
+
+#btn-login{
+    padding: 10px 20px;
+    color: #fff;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(200,200,200,0.2);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    backdrop-filter: blur(3px);
+    margin-bottom: 15vh;
+}
+
+
+
+
+
+
+/* Definir la animación de rebote */
+@keyframes reboteAnimacion {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    5% {
+        transform: translateY(-20px); /* Altura máxima del rebote */
+    }
+    12% {
+        transform: translateY(0px); /* Altura máxima del rebote */
+    }
+    14% {
+        transform: translateY(-2px); /* Altura máxima del rebote */
+    }
+    16% {
+        transform: translateY(0px); /* Altura máxima del rebote */
+    }
+}
