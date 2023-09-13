@@ -1,3 +1,4 @@
+
 /* Estilos básicos para el encabezado */
 header {
     background-color: #333; /* Color de fondo del encabezado */
@@ -10,12 +11,14 @@ header {
 
 
 body{
-    background-image: url("./assets/atitlan.jpg");
+    background-image: url("./assets/snow.jpg");
     background-size: cover; /* La imagen cubrirá toda la pantalla */
     background-position: center; /* La imagen se centrará en la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Establece la altura al 100% de la ventana gráfica del navegador */
 }
+
+
 
 
 /* Estilos para el logo */
@@ -56,36 +59,42 @@ nav ul li a:hover {
 
 
 #hora{
-    position: absolute;
-    bottom: 10vh;
-    left: 5vw;
-    color: white;
+    color: black;
     font-size: 98px;
     font-family: 'Archivo Black', sans-serif;
-    opacity: 0.6;
+    opacity: 0.9;
+    transition: opacity 0.2s linear;
 }
 
 /* Estilos para centrar el botón */
 #main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     height: 100vh; /* Opcional: centra verticalmente en la pantalla */
+    gap: 45px;
+    transition: backdrop-filter 0.5s linear;
 }
 
 
 #btn-login{
     padding: 10px 20px;
-    color: #fff;
+    color: rgb(31, 31, 31);
     border: solid;
     border-width: 1px;
-    border-color: rgba(200,200,200,0.2);
-    border-radius: 25px;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     backdrop-filter: blur(3px);
-    margin-bottom: 15vh;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.2s linear;
 }
+
 
 
 
