@@ -16,6 +16,7 @@ body{
     background-position: center; /* La imagen se centrará en la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Establece la altura al 100% de la ventana gráfica del navegador */
+    transition: background-size 0.5s ease;
 }
 
 
@@ -59,7 +60,7 @@ nav ul li a:hover {
 
 
 #hora{
-    color: black;
+    color: #444;
     font-size: 98px;
     font-family: 'Archivo Black', sans-serif;
     opacity: 0.9;

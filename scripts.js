@@ -21,6 +21,7 @@ function abrirLogin(){
     hora.style.opacity = "0"
     let btnLogin = document.querySelector("#btn-login")
     btnLogin.style.opacity = "0"
+
 }
 
 
