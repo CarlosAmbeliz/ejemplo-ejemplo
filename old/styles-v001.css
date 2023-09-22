@@ -1,0 +1,127 @@
+
+/* Estilos básicos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interior del encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body{
+    background-image: url("./assets/snow.jpg");
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* La imagen se centrará en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Establece la altura al 100% de la ventana gráfica del navegador */
+    transition: background-size 0.5s ease;
+}
+
+
+
+
+/* Estilos para el logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    color: #fff; /* Color del texto del logo */
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    font-weight: bold;
+}
+
+/* Cambiar color del enlace al pasar el cursor */
+nav ul li a:hover {
+    color: #ff6600; /* Color de texto al pasar el cursor */
+}
+
+
+
+
+#hora{
+    color: #444;
+    font-size: 98px;
+    font-family: 'Archivo Black', sans-serif;
+    opacity: 0.9;
+    transition: opacity 0.2s linear;
+}
+
+/* Estilos para centrar el botón */
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: centra verticalmente en la pantalla */
+    gap: 45px;
+    transition: backdrop-filter 0.5s linear;
+}
+
+
+#btn-login{
+    padding: 10px 20px;
+    color: rgb(31, 31, 31);
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    backdrop-filter: blur(3px);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.2s linear;
+}
+
+
+
+
+
+
+/* Definir la animación de rebote */
+@keyframes reboteAnimacion {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-10px); /* Altura máxima del rebote */
+    }
+    30% {
+        transform: translateY(0); /* Altura máxima del rebote */
+    }
+    50% {
+        transform: translateY(-5px); /* Altura máxima del rebote */
+    }
+    70% {
+        transform: translateY(0); /* Altura máxima del rebote */
+    }
+    90% {
+        transform: translateY(-2px); /* Altura máxima del rebote */
+    }
+    100% {
+        transform: translateY(0); /* Altura máxima del rebote */
+    }
+}
